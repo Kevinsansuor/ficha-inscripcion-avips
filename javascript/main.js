@@ -7,7 +7,7 @@
 
 // Obtener todos los elementos de entrada
 
-export * as main from './main.js';
+// export * as main from './main.js';
 
 const elementosEntrada = document.querySelectorAll('input, select');
 

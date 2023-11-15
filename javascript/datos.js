@@ -1,7 +1,7 @@
-import * as main from '../javascript/main.js';
+// import * as main from '../javascript/main.js';
 
-elementosEntrada.forEach((elementoEntrada) => {
-    $datos_localstorage = localStorage.getItem[elementoEntrada.id, valor];
+// elementosEntrada.forEach((elementoEntrada) => {
+//     $datos_localstorage = localStorage.getItem[elementoEntrada.id, valor];
 
-    console.log($datos_localstorage);
-});
+//     console.log($datos_localstorage);
+// });
