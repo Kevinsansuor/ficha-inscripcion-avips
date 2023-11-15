@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de inscripción Avips Ltda</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/container.css">
+    <link rel="stylesheet" href="./css/root.css">
+    <link rel="stylesheet" href="./css/iconos.css">
+
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container-body">
+        <div class="container-body-page">
+
+            <!-- 
+                Contenido del formulario de inscripcion
+             -->
+
+             <!-- Header del formulario -->
+
+             <div class="container-body-titulo" id="firstcontent">
+                <div class="body-titulo-img">
+                    <img src="./Biblioteca/Logo/logo-avips.png" alt="Logo de Avips Ltda">
+                </div>
+
+                <div class="body-titulo-text">
+                    <span>AVIPS LTDA    </span>
+                </div>
+             </div>
+
+             <!-- Header codificación -->
+
+             <div class="container-ficha">
+                <span>Codificación ficha de inscripción: PS-FT-03</span>
+             </div>
+
+             <!-- Header titulo de formulario -->
+
+             <div class="container-inicioform">
+                <div class="titulo">
+                    <h1>Formulario de inscripción de estudiante</h1>
+                </div>
+                <div class="descripcion">
+                    <h2>Formulario de inscripción de estudiante para cursos de capacitación en AVIPS LTDA, da click en el siguiente botón para generar tu registro, para más información contactarse con avips.co</h2>
+                </div>
+
+                <div class="container-btn">
+                    <button class="btnform" type="button" action="none" id="inicio-form">Inscribirme</button>
+                </div>
+
+             </div>
+
+             <!-- Separador Scroll -->
+
+             <div class="container-scroll">
+                
+             </div>
+
+             <!-- Inicio preguntas formulario -->
+
+             <form action="" name="form-ficha-inscripcion" id="formulario">
+
+             <!-- Section datos personales -->
+
+
+             <div class="container-formulario" id="formulario-datospersonales">
+
+                <div class="form-tittle-section">
+                    <span>Formación.</span>
+                </div>
+
+                <br>
+
+                <div class="descripcion">
+                    <h2>Escoge el ciclo y curso de formación en el que te desees inscribir.</h2>
+                </div>
+
+                <!-- Tipo de ciclo -->
+
+                <div class="form-select" id="select-formacion">
+                    <div class="form-description-section">
+                        <span>Tipo de ciclo.</span>
+                    </div>
+                    <select id="tipo-ciclo" title="Selecciona el ciclo" name="Ciclo" required>
+                        <option value="">Selecciona</option>
+                        <option value="vigilante" id="Ciclo">Vigilante</option>
+                        <option value="supervisor">Supervisor</option>
+                        <option value="medios tecnologicos">Medios tecnologicos</option>
+                        <option value="escolta">Escolta</option>
+                      </select>
+                </div>
+
+                <!-- Error tipo ciclo -->
+
+                <div class="mensaje-error tipo hidden" id="error_ciclo">
+                    <div class="form-description-section">
+                        <span class="material-symbols-outlined">
+                            info
+                            </span>
+                        <span class="titulo">
+                            Porfavor, selecciona un tipo de ciclo
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Tipo de curso -->
+                
+                <div class="form-select" id="select-curso">
+                    <div class="form-description-section">
+                        <span>Tipo de Curso.</span>
+                    </div>
+                    <select id="tipo-curso" name="Curso" required>
+                        <option value="">Selecciona</option>
+                        <option value="fundamentacion">Fundamentación</option>
+                        <option value="especializacion">Especialización</option>
+                        <option value="profundizacion">Profundización</option>
+                        <option value="reentrenamiento">Reentrenamiento</option>
+                        <option value="seminarios">Seminarios Administrativos</option>
+                      </select>
+                </div>
+
+                <!-- Error tipo curso -->
+
+                <div class="mensaje-error ciclo hidden" id="error_curso">
+                    <div class="form-description-section">
+                        <span class="material-symbols-outlined">
+                            info
+                            </span>
+                        <span class="titulo">
+                            Porfavor, selecciona un tipo de curso
+                        </span>
+                    </div>
+                </div>
+
+                <br><br>
+
+                <!-- Formulario de datos personales -->
+
+                <div class="form-tittle-section">
+                    <span>Datos personales.</span>
+                </div>
+
+                <div class="form-description-section">
+                    <span>Llena los campos según corresponda.</span>
+                </div>
+
+                
+                <!-- Campo número de documento de identidad -->
+
+                <div class="form-select">
+                    <div class="form-description-section">
+                        <span>Número de documento de identidad.</span>
+                    </div>
+                    
+                    <input type="number" id="documento-input" name="documento-input" required minlength="5" maxlength="20" pattern="[0-9]+">
+
+                    <!-- Error numero documento -->
+
+                    <div class="mensaje-error numero-documento hidden" id="error_numdocumento">
+                        <div class="form-description-section">
+                            <span class="material-symbols-outlined">
+                                info
+                                </span>
+                            <span class="titulo">
+                                <span class="error1">
+                                    El campo no debe estar vacio o tener menos de 5 digitos
+                                </span>
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Tipo de documento -->
+
+                    <div class="form-select" id="tipo-documento">
+                        <div class="form-description-section">
+                            <span>Tipo de documento.</span>
+                        </div>
+                        <select id="tipodocumento-input" name="tipo-Documento" required>
+                            <option value="">Selecciona</option>
+                            <option value="cedula-ciudadania">Cédula de ciudadanía</option>
+                            <option value="tarjeta-identidad">Tarjeta de identidad</option>
+                            <option value="tarjeta-identidad">Pasaporte</option>
+                            <option value="tarjeta-identidad">Cédula de extranjería</option>
+                          </select>
+                    </div>
+
+                    <!-- Error tipo documento -->
+
+                    <div class="mensaje-error tipo_documento hidden" id="error_tipodocumento">
+                        <div class="form-description-section">
+                            <span class="material-symbols-outlined">
+                                info
+                                </span>
+                            <span class="titulo">
+                                Porfavor, selecciona un tipo de documento
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Nombre de estudiante -->
+
+                    <div class="form-description-section">
+                        <span>Nombre completo.</span>
+                    </div>
+                    
+                    <input type="text" id="nombre-input" name="nombre-input" required minlength="3" maxlength="50" pattern="[a-zA-ZáéíóúñÑ ]+">
+
+                    <div class="mensaje-error input_nombre hidden" id="error_nombre">
+                        <div class="form-description-section">
+                            <span class="material-symbols-outlined">
+                                info
+                                </span>
+                            <span class="titulo">
+                                El campo no puede estar vacio, tener números o caracteres especiales
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Fecha de nacimiento -->
+
+                    <div class="form-description-section">
+                        <span>Fecha de nacimiento.</span>
+                    </div>
+
+                    <input type="date" name="fecha-input" value="" id="fecha-input" required>
+
+                    <!-- Error fecha de nacimiento -->
+
+                    <div class="mensaje-error input_fechanacimiento" id="error_fechanacimiento">
+                        <div class="form-description-section">
+                            <span class="material-symbols-outlined">
+                                info
+                                </span>
+                            <span class="titulo">
+                                El usuario debe ser mayor de 18 años
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Correo electronico -->
+
+                    <div class="form-description-section">
+                        <span>Correo electrónico personal.</span>
+                    </div>
+
+                    <input type="email" name="email-input" id="email-input" placeholder="tucorreo@gmail.com" size="50" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Error en correo electrónico">
+
+
+                    <!-- Número telefónico -->
+
+                    <div class="form-description-section">
+                        <span>Número telefónico personal.</span>
+                    </div>
+                    
+                    <input type="text" id="telefono-input" name="telefono-input" required minlength="10" maxlength="15">
+
+                    <!-- Telefono fijo -->
+
+                    <div class="form-description-section">
+                        <span>Télefono fijo (opcional).</span>
+                    </div>
+
+                
+                    
+                    <input type="text" id="telefonofijo-input" name="telefonofijo-input" minlength="5" maxlength="10">
+
+                    <!-- Dirección domicilio -->
+
+                    <div class="form-description-section">
+                        <span>Dirección de domicilio.</span>
+                    </div>
+                    
+                    <input type="text" id="direccion-input" name="direccion-input" required minlength="3" maxlength="50">
+
+                    <br><br><br><br>
+
+                    <!-- Sección datos personales -->
+
+                    <div class="form-tittle-section">
+                        <span>Datos laborales.</span>
+                    </div>
+    
+                    <div class="form-description-section">
+                        <span>Llena los campos según corresponda, si no esta laborando deje los espacios vacios.</span>
+                    </div>
+    
+                    <br>
+
+                    <!-- Noombre de la empresa que labora -->
+    
+                    <div class="form-description-section">
+                        <span>Nombre de la empresa en la que labora (opcional).</span>
+                    </div>
+                    
+                    <input type="text" id="empresa-labora-input" name="empresa-labora-input" minlength="3" maxlength="50">
+
+                    <!-- Cargo que ocupa -->
+
+                    <div class="form-description-section">
+                        <span>Cargo que ocupa dentro de la empresa (opcional).</span>
+                    </div>
+                    
+                    <input type="text" id="cargo-empresa-labora-input" name="cargo-empresa-labora-input" minlength="3" maxlength="50">
+
+                </div>
+
+                <br><br>
+
+                <!-- Seccion escolaridad -->
+
+                <div class="form-tittle-section">
+                    <span>Escolaridad.</span>
+                </div>
+
+                <br>
+
+                <div class="descripcion">
+                    <h2>Completa los campos según corresponda.</h2>
+                </div>
+
+                <!-- Tipo escolaridad -->
+
+                <div class="form-select" id="select-escolaridad">
+                    <div class="form-description-section">
+                        <span>Última formación obtenida.</span>
+                    </div>
+                    <select id="tipo-escolaridad" name="Escolaridad">
+                        <option value="ninguna">Ninguna</option>
+                        <option value="Bachiller" id="Ciclo">Bachiller</option>
+                        <option value="Tecnologo">Tecnologo</option>
+                        <option value="universitario">Universitario</option>
+                      </select>
+                </div>
+
+                <!-- Botón action -->
+
+                <div class="container-btn">
+                    <button type="submit" id="boton-formulario-final" class="btnform" acion="">Anexar documentación<span class="material-symbols-outlined">
+                        chevron_right
+                        </span></button>
+                </div>
+
+                <!-- <div class="container-btn secundary">
+                    <button type="button" action="none" id="back-inicio-form" class="btnform"><span class="material-symbols-outlined">
+                        chevron_left
+                        </span>Ciclo de formación</button>
+                    
+                </div> -->
+
+             </div>
+
+             <!-- Separador -->
+
+             <div class="container-scroll">
+                
+             </div>  
+
+             </form>
+
+        </div>
+    </div>
+
+    <script src="./javascript/main.js"></script>
+    <script src="./javascript/validations.js"></script>
+    <script src="./javascript/datos.js"></script>
+</body>
+</html>

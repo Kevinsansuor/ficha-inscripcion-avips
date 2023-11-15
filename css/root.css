@@ -1,0 +1,37 @@
+:root{
+    
+        --color-primary-a0:  #ffffff;
+        --color-primary-a10:  #ffda94; 
+        --color-primary-a50:  #f2b705;
+        --color-primary-a60:  #735716;
+        --color-primary-a70:  #000000; 
+
+        --texto: 'Montserrat Alternates', sans-serif;
+        --titulo: 'Montserrat', sans-serif;
+        
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    box-sizing: border-box;
+    color: var(--color-primary-a70);
+    background-color: var(--color-primary-a0);
+    font-family: var(--texto);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+h1{
+    font-family: var(--titulo);
+    font-weight: 500;
+    font-size: 48px;
+}
+
+@media screen and (max-width:455px) {
+    body{
+        font-size: 16px;
+    }
+}

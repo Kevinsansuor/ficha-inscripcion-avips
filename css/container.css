@@ -1,0 +1,379 @@
+.container-body{
+    display: flex;
+    padding: 0px 200px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container-body .container-body-page{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+}
+
+.container-body-titulo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    border-bottom: solid var(--color-primary-a70) 1px;
+    padding: 25px 0;
+}
+
+.container-body-titulo .body-titulo-img img{
+    width: 50px;
+    height: 50px;
+}
+
+.container-body-titulo .body-titulo-text{
+    font-family: var(--titulo);
+    font-weight: bold;
+}
+
+.container-ficha{
+    padding: 25px 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.container-inicioform{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    padding: 25px 0;
+    justify-content: center;
+    height: calc(100vh - 250px);
+}
+
+.container-inicioform .titulo{
+    width: 100%;
+    text-align: start;
+    font-size: 40px;
+}
+
+.container-btn{
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.container-btn button{
+    font-size: 16px;
+}
+
+.container-btn button,
+.container-btn .btnform{
+    text-decoration: none;
+    color: var(--color-primary-a70);
+    font-weight: bold;
+    border-radius: 5px;
+    border: var(--color-primary-a70) 2.5px solid;
+    background-color: var(--color-primary-a50);
+    padding: 20px 45px;
+    font-family: var(--titulo);
+    cursor: pointer;
+}
+
+.container-btn #inicio-form{
+    padding: 20px 65px;
+}
+
+.container-btn.secundary .btnform{
+    background-color: var(--color-primary-a0);
+}
+
+
+.container-body .container-body-page .container-scroll{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 50px;
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+    border: var(--color-primary-a70) solid 1.5px;
+    border-radius: 10px;
+background: #ffffff;
+box-shadow:  8px 8px 16px #d9d9d9,
+             -8px -8px 16px #ffffff;
+    
+}
+
+.container-formulario .form-tittle-section{
+    font-family: var(--titulo);
+    width: 100%;
+    font-size: 35px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: self-start;
+    padding-bottom: 25px;
+    border-bottom: var(--color-primary-a70) 1.5px solid;
+}
+
+.container-formulario .form-description-section{
+    padding: 15px 0 ;
+}
+
+.container-formulario .form-select{
+    width: 100%;
+    border-radius: 5px;
+    margin: 25px 0;
+}
+
+select {
+    background-image: url(../Biblioteca/iconos/angle-down.svg);
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: right;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    }
+
+    input[type=text] {
+        width: 100%;
+        padding: 25px 25px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border-radius: 5px;
+        font-size: 20px;
+        border: 1px solid var(--color-primary-a70);
+        text-transform: capitalize;
+      }
+
+      input[type=number] {
+        width: 100%;
+        padding: 25px 25px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border-radius: 5px;
+        font-size: 20px;
+        border: 1px solid var(--color-primary-a70);
+        text-transform: capitalize;
+        
+      }
+
+    input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+    input[type=number] { -moz-appearance:textfield; }
+
+      input[type=email] {
+        width: 100%;
+        padding: 25px 25px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border-radius: 5px;
+        font-size: 20px;
+        border: 1px solid var(--color-primary-a70);
+        text-transform: none;
+      }
+
+      input[type=email]::placeholder{
+        color: hsla(0, 0%, 0%, 0.25 );
+      }
+
+      input[type=date] {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 25px 25px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border-radius: 5px;
+        font-size: 20px;
+        border: 1px solid var(--color-primary-a70);
+      }
+
+      .input-date {
+        width: 100%;
+        height: 40px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 0 10px;
+        font-size: 16px;
+        font-family: sans-serif;
+      }
+      
+      .input-date::after {
+        content: "\f073";
+        font-family: "Material Icons";
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+      }
+      
+      
+
+      input:hover,
+input:focus {
+  border: 1.5px solid var(--color-primary-a10);
+  background-color: white;
+}
+      
+
+select::-ms-expand {
+    display: none; /*Evita que se muestre la flecha por defecto en versiones de IE*/
+    }
+
+.container-formulario .form-select select{
+    background-color: var(--color-primary-a0);
+    color: var(--color-primary-a70);
+    width: 100%;
+    height: max-content;
+    padding: 25px 25px;
+    border-radius: 10px;
+    font-family: var(--titulo);
+    font-size: 20px;
+}
+
+.container-formulario .container-btn{
+    padding: 15px 0;
+    width: 100%;
+}
+
+.container-formulario .container-btn .btnform{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.container-formulario .container-btn .btnform .material-symbols-outlined{
+    font-size: 35px;
+}
+
+
+@media screen and (max-width:768px) {
+    .container-body{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 100px;
+    }
+}
+
+@media screen and (max-width:455px) {
+    .container-body{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 25px;
+    }
+
+    .container-body-titulo{
+        padding: 15px 0;
+    }
+    
+
+    .container-ficha{
+        justify-content: end;
+        padding: 10px 5px;
+        text-align: start;
+        font-size: 14px;
+    }
+
+    .container-tituloprincipal h1{
+        font-size: 35px;
+        font-weight: 500;
+        text-align: start;
+    }
+
+    .container-inicioform{
+        padding: 50px 0;
+        height: calc(100vh - 225px);
+    }
+
+    .container-inicioform .titulo h1{
+        font-size: 40px;
+    }
+
+    .container-btn .btnform{
+        width: 100%;
+        text-align: center;
+    }
+
+    .container-formulario{
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    .container-formulario .form-tittle-section{
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+
+    .container-formulario .form-description-section{
+        padding: 10px 0;
+    }
+
+    .container-formulario .form-select select{
+        padding: 20px 20px;
+        font-size: 18px;
+    }
+
+    input[type=text]{
+        padding: 20px 20px  ;
+    }
+
+    .container-formulario .container-btn .btnform{
+        padding: 15px;
+    }
+}
+
+.mensaje-error, .mensaje-error.tipo, .mensaje-error.ciclo, .numero-documento, .mensaje-error.tipo_documento, .mensaje-error.input_nombre, .mensaje-error.input_fechanacimiento{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: var(--color-primary-a70) 1.5px solid;
+    background-color: #ff3333;
+    color: var(--color-primary-a0);
+    width: 100%;
+    border-radius: 5px;
+}
+
+.mensaje-error .form-description-section, .mensaje-error.tipo .form-description-section, .mensaje-error.ciclo .form-description-section, .mensaje-error.numero-documento .form-description-section, .mensaje-error.tipo_documento .form-description-section, .mensaje-error.input_nombre .form-description-section .mensaje-error.input_fechanacimiento .form-description-section{
+    width: 100%;
+    padding: 25px;
+    gap: 50px;
+    display: flex;
+    justify-content: start;
+    font-family: var(--titulo);
+    font-size: 20px;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.mensaje-error.hidden, .mensaje-error.tipo.hidden, .mensaje-error.ciclo.hidden .mensaje-error.numero-documento.hidden, .mensaje-error.tipodocumento.hidden, .mensaje-error.input_nombre.hidden, .mensaje-error.input_fechanacimiento{
+    display: none;
+}
+
+@media screen and (max-width:455px){
+    .material-symbols-outlined{
+        display: none;
+    }
+}
